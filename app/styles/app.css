@@ -1,0 +1,109 @@
+html, body {
+  margin: 20px;
+  background: rgb(29, 30, 28);
+}
+
+a {
+  color: rgb(153, 170, 204);
+  text-decoration: none;
+}
+
+.container {
+  padding-top: 20px;
+}
+
+.left {
+  float: left;
+  width: 60%;
+}
+
+.right {
+  float: right;
+  width: 40%;
+}
+
+.deoptimized {
+  color: rgb(254, 95, 95) !important;
+}
+
+.output-panel {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  color: rgb(170, 170, 170);
+}
+
+.items {
+  list-style-type: none;
+  margin-top: 0;
+}
+
+.item {
+  padding: 0;
+  margin: 0;
+}
+
+.param {
+  color: rgb(170, 238, 204);
+}
+
+.header {
+  color: rgb(255, 255, 255);
+}
+
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Code Pro'), local('SourceCodePro-Regular'), url(http://fonts.gstatic.com/s/sourcecodepro/v5/mrl8jkM18OlOQN8JLgasD5bPFduIYtoLzwST68uhz_Y.woff2) format('woff2'), url(http://fonts.gstatic.com/s/sourcecodepro/v5/mrl8jkM18OlOQN8JLgasD9Hq-FFgoDNV3GTKpHwuvtI.woff) format('woff');
+}
+
+/* CodeMirror styles */
+.CodeMirror {
+  background: rgb(29, 30, 28);
+  font-size: 15px;
+  color: rgb(170, 170, 170);
+  /* font-family: 'Source Code Pro', 'Monaco', 'Consolas', monospace; */
+}
+
+.CodeMirror-line-numbers {
+  color: rgb(153, 153, 153);
+}
+
+.CodeMirror-linenumber {
+  text-align: left;
+}
+
+.CodeMirror-gutters {
+  background:  rgb(29, 30, 28);
+  border-right: 1px solid rgb(29, 30, 28);
+  text-align: right;
+}
+
+.cm-s-default span.cm-variable {
+  color: rgb(255, 255, 255);
+}
+
+.cm-s-default span.cm-variable-2 {
+  color: rgb(255, 255, 255);
+}
+
+.cm-s-default span.cm-comment {
+  color: rgb(153, 170, 204);
+}
+
+.cm-s-default .CodeMirror-lines .CodeMirror-cursor {
+  border-left: 1px solid #ffffff !important;
+}
+
+.cm-s-default span.cm-string {
+  color: rgb(170, 170, 170);
+}
+
+.cm-s-default span.cm-keyword {
+  color: rgb(254, 255, 183);
+}
+
+.cm-s-default .cm-def {
+  color: rgb(170, 204, 255);
+}

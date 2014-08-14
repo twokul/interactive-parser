@@ -1,0 +1,29 @@
+<div id="output-panel" class="output-panel">
+  <ul class="items">
+    {{#each el in node.elements}}
+      <li>
+        <table>
+          <tr>
+            <td {{bind-attr class="el.deoptimization:deoptimized:optimized :header"}} colspan="2">
+              {{el.name}}
+              {{el.value}}
+            </td>
+          </tr>
+          <tr>
+            {{#each el.params}}
+              <td class="param">{{this}}</td>
+            {{/each}}
+            {{#each prop in el.hiddenClass.properties}}
+              <td class="param">{{prop}}</td>
+            {{/each}}
+          </tr>
+          {{#if el.deoptimization}}
+            <tr>
+              <td colspan="2">{{{el.deoptimization.description}}}</td>
+            </tr>
+          {{/if}}
+        </table>
+      </li>
+    {{/each}}
+  </ul>
+</div>

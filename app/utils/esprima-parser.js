@@ -4,7 +4,9 @@ function parse(text) {
   var esprimaNode;
 
   try {
-    esprimaNode = esprima.parse(text);
+    esprimaNode = esprima.parse(text, {
+      range: true
+    });
   } catch(e) {
     return instantiate('Program', {
       body: [{

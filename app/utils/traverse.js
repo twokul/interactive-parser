@@ -2,6 +2,10 @@ import HiddenClass from '../models/hidden-class';
 import TryBlock    from '../models/try-block';
 import EvalBlock   from '../models/eval-block';
 
+function analyzeBody(body) {
+  return body.range[1] >= 600;
+}
+
 function findTryBlock(nodes) {
   for (var i = 0, l = nodes.length; i < l; i++) {
     if (nodes[i].type === 'TryStatement') {
@@ -85,4 +89,4 @@ function analyzeForChangedHiddenClasses(program) {
   });
 }
 
-export { findTryBlock, findEvalBlock, getAssignments, findVariable, findFunction, analyzeForHiddenClasses, analyzeForChangedHiddenClasses };
+export { analyzeBody, findTryBlock, findEvalBlock, getAssignments, findVariable, findFunction, analyzeForHiddenClasses, analyzeForChangedHiddenClasses };

@@ -14,13 +14,12 @@
   </head>
   <body>
     <script>
-      window.InteractiveParserENV = {{ENV}};
-      window.EmberENV = window.InteractiveParserENV.EmberENV;
+      window.EmberENV = {{EMBER_ENV}};
     </script>
     <script src="assets/vendor.js"></script>
     <script src="assets/interactive-parser.js"></script>
     <script>
-      window.InteractiveParser = require('interactive-parser/app')['default'].create(InteractiveParserENV.APP);
+      window.InteractiveParser = require('interactive-parser/app')['default'].create({{APP_CONFIG}});
     </script>
   </body>
 </html>

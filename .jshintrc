@@ -2,7 +2,7 @@
   "predef": {
     "document": true,
     "window": true,
-    "InteractiveParserENV": true,
+    "-Promise": true,
     "CodeMirror": true,
     "esprima": true
   },
